@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: rgb(181, 181, 221);
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+}
+
+#num1 {
+  margin-bottom: 14px;
+}
+
+#num2 {
+  margin-top: 14px;
+}
+
+#num1,
+#num2 {
+  outline: none;
+  border: 2px solid black;
+  background-color: transparent;
+  border-radius: 14px;
+  width: 250px;
+  height: 34px;
+  box-shadow: 0px 0px 5px -1px #000000;
+}
+
+#num1:focus,
+#num2:focus {
+  box-shadow: 0px 0px 15px -1px #000000;
+}
+
+#num1:hover,
+#num2:hover {
+  background-color: rgb(172, 172, 214);
+}
+
+#plus,
+#minus,
+#multiplications,
+#divisions {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  font-weight: 550;
+  font-size: 16px;
+}
+
+#plus:hover,
+#minus:hover,
+#multiplications:hover,
+#divisions:hover {
+  background-color: rgb(172, 172, 214);
+}
+
+#plus:focus,
+#minus:focus,
+#multiplications:focus,
+#divisions:focus {
+  box-shadow: 0px 0px 15px -1px #000000;
+}
+
+#operator_btns {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
+
+#result-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 16px;
+  border: 2px solid black;
+  background-color: transparent;
+  width: 100px;
+  height: 30px;
+  border-radius: 14px;
+}
+
+#result-btn:hover {
+  background-color: rgb(172, 172, 214);
+}
+
+#result-btn:active {
+  background-color: rgb(154, 154, 201);
+}
